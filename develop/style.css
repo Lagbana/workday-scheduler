@@ -1,7 +1,24 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1;
+}
+
+.col-1 {
+  width: 100%;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.col-10 {
+  background-color:#ffffff;
+  height: inherit;
+  width: 100%;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 
 textarea{
@@ -9,8 +26,11 @@ textarea{
   border: none;
   resize: none;
   color: #000000;
-  border-left: 1px solid black;
-  padding: 10px;
+  border-left: 0.0625rem solid black;
+  /* padding: 10px; */
+  width: 100%;
+  height: 99%;
+  /* margin-right: 0rem;  */
 }
 
 .jumbotron {
@@ -18,29 +38,63 @@ textarea{
   background-color: transparent;
   color: black;
   border-radius: 0;
-  border-bottom: 10px solid black;
+  border-bottom: 0.625rem solid black;
 }
 
 .description{
   white-space: pre-wrap;
+  background-color: lightgrey;
 }
-
+/* for all time block rows */
 .time-block{
   text-align: center;
-  border-radius: 15px;
+  border-radius: 1rem;
 }
-
+/* for all time block rows */
 .row {
-  white-space: pre-wrap;
-  height: 80px;
-  border-top: 1px solid white;;
+  /* white-space: pre-wrap; */
+  height: 5rem;
+  width: 100%;
+  border-top: 0.0625rem solid white;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
-
+/*  for hour div col*/
 .hour {
   background-color: #ffffff;
   color: #000000;
-  border-top: 1px dashed #000000;
+  border-top: 0.0625rem dashed #000000;
+  height: inherit;
+  width: 100%;
 }
+
+@media screen and (max-width: 576px) {
+  .span-time {
+    font-size: 0.55rem;
+  }
+}
+@media screen and (min-width: 576px) {
+  .span-time {
+    font-size: 0.7rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .span-time {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .span-time {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .span-time {
+    font-size: 1.2rem;
+  }
+}
+
+
 
 .past {
   background-color: #d3d3d3;
@@ -59,13 +113,19 @@ textarea{
 
 .saveBtn {
   border-left: 1px solid black;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
   background-color: #06AED5;
+  height: 100%;
+  width: 100%;
   color: white;
 }
 
 .saveBtn i:hover {
-  font-size: 20px;
+  font-size: 1.25rem;
   transition: all .3s ease-in-out;
+}
+
+.fa-save:hover {
+  color: black;
 }
