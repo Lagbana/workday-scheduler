@@ -12,7 +12,6 @@ $(document).ready(function () {
     let dateNow = moment().format('dddd, MMMM Do YYYY')
 
 
-
     // Display time on Jumbotron
     currentDay.text(dateNow)
 

@@ -23,8 +23,7 @@ https://lagbana.github.io/workday-scheduler/
 ## Demo
 
 #### Entering and saving entries
-![saving-entry](assets/git1.gif)
+![saving-entry](assets/gif1.gif)
 
 #### Color variation (past, present, future)
-![colored-agenda](assets/git2.gif)
-
+![colored-agenda](assets/gif2.gif)
