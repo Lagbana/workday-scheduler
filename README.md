@@ -1,7 +1,12 @@
 # Work-Day Scheduler
 
-### Focus: Working with jQuery, local storage, and rendering content in text field
+### Outcome
 The final product is a 9AM - 5PM single work day scheduler
+
+Learning enhanced:
+- working with jQuery, 
+- local storage (set and get items)
+- rendering content in text field
 
 ## Link: view project
 https://lagbana.github.io/workday-scheduler/
