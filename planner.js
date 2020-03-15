@@ -67,9 +67,11 @@ $(document).ready(function () {
         textArea.css('padding', '0.5rem')
         // Conditions for adding colors. (Grey if time is past, Red if time is current, and Green for future time)
         if (parseInt(textArea.attr('id')) === hourNow) {
-            textArea.css('background-color', '#fe3939')
+            textArea.addClass('present')
         } else if (textArea.attr('id') > hourNow) {
-            textArea.css('background-color', 'green')
+            textArea.addClass('future')
+        } else if (textArea.attr('id') < hourNow) {
+            textArea.addClass('past')
         }
         // Get item from local storage and render in text area. Retain on refresh
         textArea.val(localStorage.getItem(staticTime[i]))
