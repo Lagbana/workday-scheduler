@@ -1,14 +1,14 @@
 # Work-Day Scheduler
 
 ### Outcome
-The final product is a 9AM - 5PM single work day scheduler
+Product: a fully responsive 9AM - 5PM single work day scheduler
 
-Learning enhanced:
+Learning:
 - working with jQuery, 
 - local storage (set and get items)
 - rendering content in text field
 
-## Link: view project
+## Link: view product
 https://lagbana.github.io/workday-scheduler/
 
 
